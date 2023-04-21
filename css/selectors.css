@@ -1,0 +1,13 @@
+.heading{
+    color: rgba(213, 51, 110, 0.9);
+    text-align: center;
+}
+.survey{
+text-align: center;
+}
+div h2{
+    background-color: rgba(109, 136, 14, 0.668);
+}
+div>p{
+    color: brown;
+}
