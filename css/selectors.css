@@ -1,13 +1,22 @@
 .heading{
-    color: rgba(213, 51, 110, 0.9);
+    color: rgb(244, 234, 234);
     text-align: center;
 }
 .survey{
-text-align: center;
+text-align:center;
+padding:10%;
+border: 1px solid red;
 }
 div h2{
     background-color: rgba(109, 136, 14, 0.668);
+    
 }
 div>p{
-    color: brown;
+    color: rgb(7, 7, 7);
+}
+body{
+    background-image:url(backgroundimage.jpeg);
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-size: cover;
 }
