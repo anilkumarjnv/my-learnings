@@ -7,31 +7,41 @@
     <title>my_Website</title>
     <style>
         .container{
-            background-color: rgb(214, 235, 180);
-            width: 800px;
-            height: 800px;
             font-family:'Times New Roman', Times, serif;
             margin-left: auto;
             margin-right: auto;
         }
         .header{
-            text-align: center;
-            background-color: rgb(220, 156, 100);
-            color: white;
+            text-align:center;
+            background-color:white;
+            font-style:italic;
+            font-family:cursive;
+            background-color:orange;
         }
         .content{
+            display: flex;
+            flex-direction: column;
             padding: 10px;
         }
         .nav{
-            
-            width: 180px;
-            float: left;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            gap: 10px;
+            font-family: cursive;
+            font-style: oblique;
+            background-color: gray;
 
         }
         .main{
-            width: 600px;
-            text-align:left;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             float: right;
+            font-style: oblique;
+            font-family: cursive;
+            color:white;
+            background-color: rgba(31, 34, 26, 0.752);
         }
         .footer{
             clear: both;
@@ -39,15 +49,14 @@
             color: white;
             text-align: center;
         }
-        ul{
-            list-style-type: none;
-        }
         a{
             text-decoration: none;
+            color:blue;
             
         }
-        .nav .selected{
-            font-size: bold;
+        h2{
+            text-align: center;
+            color: rgba(231, 54, 54, 0.899);
         }
     </style>
 </head>
@@ -58,18 +67,14 @@
         </div>
         <div class="content">
             <div class="nav">
-                <nav>
-                    <ul>
-                        <li> <a class=" selected"href=""> Home</a></li>
-                        <li> <a href="">About</a></li>
-                        <li> <a href="">Tickets</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
+                        <div><a href=""> Home</a></div>
+                        <div><a href="">About</a></div> 
+                        <div><a href="">Tickets</a></div>
+                        <div><a href="">Contact</a></div>
             </div>
             <div class="main">
                 <h2>Home</h2>
-                <p>AB game zone is a perfect place for your weekend. Here,you will experience a lot of fun. We have lot of fun games designed especially for the adults as we as for kids also. </p>
+                <p>AB game zone is a perfect place for your weekend. Here,you will experience a lot of fun. We have lot of fun games designed especially for the adults as we as for kids also.</p>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
             </div>
         </div>
