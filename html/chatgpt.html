@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bus Search</title>
+  <!-- Add CSS stylesheets and JavaScript files as needed -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <!-- Add your website logo and navigation menu here -->
+    <h1>Bus Reservation</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Bus Search</a></li>
+        <li><a href="#">Routes</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="search-form">
+    <!-- Add the search form here -->
+    <form action="search.php" method="GET">
+      <input type="text" name="origin" placeholder="Origin" required>
+      <input type="text" name="destination" placeholder="Destination" required>
+      <input type="date" name="departure_date" required>
+      <input type="number" name="passengers" placeholder="Passengers" required>
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <section class="search-results">
+    <!-- Add the search results here -->
+    <h2>Search Results</h2>
+    <div class="bus-result">
+      <div class="bus-details">
+        <h3>Bus Operator 1</h3>
+        <p>Departure: <span class="time">08:00 AM</span></p>
+        <p>Arrival: <span class="time">12:00 PM</span></p>
+        <p>Duration: <span class="duration">4 hours</span></p>
+        <p>Price: $50</p>
+      </div>
+      <div class="bus-book">
+        <a href="#">Book Now</a>
+      </div>
+    </div>
+
+    <div class="bus-result">
+      <div class="bus-details">
+        <h3>Bus Operator 2</h3>
+        <p>Departure: <span class="time">09:30 AM</span></p>
+        <p>Arrival: <span class="time">02:00 PM</span></p>
+        <p>Duration: <span class="duration">4 hours 30 mins</span></p>
+        <p>Price: $45</p>
+      </div>
+      <div class="bus-book">
+        <a href="#">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Repeat the above bus-result divs for each search result -->
+  </section>
+
+  <footer>
+    <!-- Add footer content here -->
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+    <p>Contact us at info@example.com | Phone: 123-456-7890</p>
+  </footer>
+</body>
+</html>

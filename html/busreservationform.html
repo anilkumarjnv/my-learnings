@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bus Booking Form</title>
+  <style>
+    /* CSS styles */
+    .form-container {
+      width: 400px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 5px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .seats {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .seat {
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      background-color: lightgray;
+      border: 1px solid gray;
+      cursor: pointer;
+    }
+    .selected {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Bus Booking Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="departure-time">Departure Time:</label>
+        <input type="text" id="departure-time" name="departure-time">
+      </div>
+      <div class="form-group">
+        <label for="arrival-time">Arrival Time:</label>
+        <input type="text" id="arrival-time" name="arrival-time">
+      </div>
+      <div class="form-group">
+        <label for="bus-type">Bus Type:</label>
+        <select id="bus-type" name="bus-type">
+          <option value="AC">AC</option>
+          <option value="Non-AC">Non-AC</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="time-duration">Time Duration:</label>
+        <input type="text" id="time-duration" name="time-duration">
+      </div>
+      <div class="form-group">
+        <label for="total-duration">Total Duration:</label>
+        <input type="text" id="total-duration" name="total-duration">
+      </div>
+      <div class="form-group">
+        <label for="arrival-rating">Arrival Rating:</label>
+        <input type="text" id="arrival-rating" name="arrival-rating">
+      </div>
+      <div class="form-group">
+        <label for="pricing">Pricing:</label>
+        <input type="text" id="pricing" name="pricing">
+      </div>
+      <div class="form-group">
+        <label for="select-seats">Select Seats:</label>
+        <div class="seats">
+          <div class="seat">1</div>
+          <div class="seat">2</div>
+          <div class="seat">3</div>
+          <div class="seat">4</div>
+          <div class="seat">5</div>
+          <div class="seat">6</div>
+          <div class="seat">7</div>
+          <div class="seat">8</div>
+        </div>
+    </div>
+    </form>
+    
